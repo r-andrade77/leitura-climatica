@@ -13,16 +13,16 @@ public class LeituraClimatica {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Long id;
+	private Long id;
 	
 	@Column(name = "temperatura")
-	double temperatura;
+	private double temperatura;
 	
 	@Column(name = "umidade")
-	double umidade;
+	private double umidade;
 
 	@Column(name = "data_hora")
-	LocalDateTime dataHora;
+	private LocalDateTime dataHora;
 
 	public LeituraClimatica(Long id, double temperatura, double umidade, LocalDateTime dataHora) {
 		this.temperatura = temperatura;
